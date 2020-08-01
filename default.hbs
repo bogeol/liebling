@@ -73,6 +73,12 @@
       }
     </style>
 
+
+{{!-- ***************add toc css before theme --}}
+<link rel="stylesheet" href="{{asset "css/tocbot.css"}}">
+{{!-- ***************add toc css before theme --}}
+
+
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen" />
 
     {{!-- This #block helper will inject a stylesheet for a specific page --}}
@@ -112,6 +118,23 @@
     <script defer src="{{asset "js/vendor/content-api.min.js"}}"></script>
     <script defer src="{{asset "js/vendor.js"}}"></script>
     <script defer src="{{asset "js/app.js"}}"></script>
+
+
+
+
+    {{!-- ********toc js --}}
+    	<script src="{{asset "js/tocbot.min.js"}}"></script>
+	<script>
+		tocbot.init({
+    		tocSelector: '.toc',
+ 			contentSelector: '.post-content',
+  			hasInnerContainers: true
+ 		});
+	</script>
+
+    {{!-- ********toc js --}}
+
+
 
     {{!-- The #block helper will pull in data from the #contentFor other template files --}}
     {{{block "scripts"}}}

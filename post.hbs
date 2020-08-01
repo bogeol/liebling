@@ -40,19 +40,61 @@ into the {body} of the default.hbs template --}}
             <header class="m-heading">
               <h1 class="m-heading__title in-post">{{title}}</h1>
               <div class="m-heading__meta">
-                {{#if primary_tag}}
+
+
+                {{!-- {{#if primary_tag}}
                   <a href="{{primary_tag.url}}" class="m-heading__meta__tag">{{primary_tag.name}}</a>
                   <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span>
-                {{/if}}
-                <span class="m-heading__meta__time">{{date published_at}}</span>
+                {{/if}} --}}
+
+{{!-- List of tags  --}}
+              {{#if tags}}
+              
+                  <ul style="margin: 0;padding=0;">
+                    {{#foreach tags}}
+                      <li style="list-style-type:none;float:left;margin: 0;padding=0;">
+                        <a href="{{url}}" class="m-heading__meta__tag" title="{{name}}">{{name}}&nbsp;&nbsp;&nbsp;</a>
+                        {{!-- <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span> --}}
+                      </li>
+                    {{/foreach}}
+                  </ul>
+              
+              {{/if}}
+
+
+
+
+
+
+                <span class="m-heading__meta__time" style="font-size:1.25rem;padding-right:30px;">「{{date published_at}}」</span>
               </div>
             </header>
             <div class="pos-relative js-post-content">
+
+{{!-- **************toc div --}}
+
+ <div class="m-share">
+                <div class="m-share__content js-sticky">
+
+
+
+
+
+    </div>
+</div>
+{{!-- **************toc div --}}
+
+
+
   <div class="m-share">
 
 
 
                 <div class="m-share__content js-sticky">
+
+
+
+                
                   
                  <a class="m-icon-button filled in-share progress js-scrolltop"  rel="noopener" aria-label="Top" id="navi-top" >
                     <span class="icon-arrow-top" aria-hidden="true"></span>
@@ -62,7 +104,7 @@ into the {body} of the default.hbs template --}}
                   </a>
 
  <a
-                    class="m-icon-button filled in-share " rel="noopener" aria-label="Search" >
+                    class="m-icon-button filled in-share in-mobile-topbar js-open-search" rel="noopener" aria-label="Search" >
                     <span class="icon-search" aria-hidden="true"></span>
                   
                   </a>
@@ -91,11 +133,30 @@ into the {body} of the default.hbs template --}}
                                   
 
               </div>
-             
-            	{{content}}
+
+
+
+              {{!-- ***************** add toc to post template --}}
+             <section class="post-full-content">
+
+	<aside class="toc-container">
+		<div class="toc "></div>
+	</aside>
+
+	<div class="post-content">
+		{{content}}
+	</div>
+</section>
+
+
+              {{!-- ***************** add toc to post template --}}
+
+
+
+
 
               {{!-- List of tags  --}}
-              {{#if tags}}
+              {{!-- {{#if tags}}
                 <section class="m-tags in-post">
                   <h3 class="m-submenu-title">{{t "Tags"}}</h3>
                   <ul>
@@ -106,7 +167,10 @@ into the {body} of the default.hbs template --}}
                     {{/foreach}}
                   </ul>
                 </section>
-              {{/if}}
+              {{/if}} --}}
+
+
+
             </div>
           </div>
         </div>
@@ -176,6 +240,9 @@ into the {body} of the default.hbs template --}}
               {{#if primary_author.bio}}
                 <p class="m-author__bio">{{primary_author.bio}}</p>
               {{/if}}
+
+
+              
               <ul class="m-author-links">
                 {{#if primary_author.website}}
                   <li>
