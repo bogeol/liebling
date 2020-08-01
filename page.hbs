@@ -6,6 +6,7 @@ This template is used for the posts that are marked as pages.
 {{#contentFor "preload"}}
   <link rel="preload" href="{{asset "css/post.css"}}" as="style" />
   <link rel="preload" href="{{asset "js/page.js"}}" as="script" />
+
 {{/contentFor}}
 
 {{!-- This block loads specific styles for the post page --}}
@@ -51,4 +52,11 @@ into the {body} of the default.hbs template --}}
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
   <script defer src="{{asset "js/page.js"}}"></script>
+  {{!-- <script>
+    tocbot.init({
+        tocSelector: '.toc',
+        contentSelector: '.post-content',
+        hasInnerContainers: true
+    });
+</script> --}}
 {{/contentFor}}

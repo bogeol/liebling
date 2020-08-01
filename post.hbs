@@ -48,8 +48,52 @@ into the {body} of the default.hbs template --}}
               </div>
             </header>
             <div class="pos-relative js-post-content">
+  <div class="m-share">
+
+
+
+                <div class="m-share__content js-sticky">
+                  
+                 <a class="m-icon-button filled in-share progress js-scrolltop"  rel="noopener" aria-label="Top" id="navi-top" >
+                    <span class="icon-arrow-top" aria-hidden="true"></span>
+                    <svg aria-hidden="true">
+                      <circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
+                    </svg>
+                  </a>
+
+ <a
+                    class="m-icon-button filled in-share " rel="noopener" aria-label="Search" >
+                    <span class="icon-search" aria-hidden="true"></span>
+                  
+                  </a>
+ 
+                  
+
+
+
+
+
+                  <a href="https://bogeol.xyz/tags"
+                    class="m-icon-button filled in-share" target="_self" rel="noopener" aria-label="Tags">
+                    <span class="icon-star" aria-hidden="true"></span>
+                  </a>
+
+
+
+                  <a href="https://bogeol.xyz"
+                    class="m-icon-button filled in-share" target="_self" rel="noopener" aria-label="Home">
+                    <span class="icon-globe" aria-hidden="true"></span>
+       {{!-- <img class="navi-icon" src="data:image/png;base64,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"/> --}}
+                  </a>
+                   
+                 
+                                </div>
+                                  
+
+              </div>
              
-              {{content}}
+            	{{content}}
+
               {{!-- List of tags  --}}
               {{#if tags}}
                 <section class="m-tags in-post">
