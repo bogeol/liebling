@@ -244,19 +244,19 @@ textarea {
 }
 :root,
 [data-theme="light"] {
-  --background-color: #111;
+  --background-color: #3d3f41;
   --primary-foreground-color: #ccc;
   --secondary-foreground-color: #fff;
   --primary-subtle-color: #2c2fe6;
-  --secondary-subtle-color: #141920;
-  --titles-color: #b4b4b4;
-  --link-color: #b6b7f6;
+  --secondary-subtle-color: #344861;
+  --titles-color: #aba69f;
+  --link-color: #6587af;
   --primary-border-color: #1d1d1d;
   --secondary-border-color: #0f0f0f;
   --article-shadow-normal: 0 4px 5px 5px rgba(0, 0, 0, 0.1);
   --article-shadow-hover: 0 4px 5px 10px rgba(0, 0, 0, 0.1);
   --transparent-background-color: rgba(0, 0, 0, 0.99);
-  --footer-background-color: #212121;
+  --footer-background-color: #080808;
   --submenu-shadow-color-opacity: 0.55;
   --button-shadow-color-normal: rgba(10, 10, 10, 0.5);
   --button-shadow-color-hover: rgba(10, 10, 10, 0.5);
@@ -265,19 +265,19 @@ textarea {
   --table-head-border-bottom: #1d1d1d;
 }
 [data-theme="dark"] {
-  --background-color: #111;
+  --background-color: #3d3f41;
   --primary-foreground-color: #ccc;
   --secondary-foreground-color: #fff;
-  --primary-subtle-color: #67cdfe;
-  --secondary-subtle-color: #363b40;
-  --titles-color: #b4b4b4;
-  --link-color: #b6b7f6;
+  --primary-subtle-color: #2c2fe6;
+  --secondary-subtle-color: #344861;
+  --titles-color: #aba69f;
+  --link-color: #6587af;
   --primary-border-color: #1d1d1d;
   --secondary-border-color: #0f0f0f;
   --article-shadow-normal: 0 4px 5px 5px rgba(0, 0, 0, 0.1);
   --article-shadow-hover: 0 4px 5px 10px rgba(0, 0, 0, 0.1);
   --transparent-background-color: rgba(0, 0, 0, 0.99);
-  --footer-background-color: #212121;
+  --footer-background-color: #080808;
   --submenu-shadow-color-opacity: 0.55;
   --button-shadow-color-normal: rgba(10, 10, 10, 0.5);
   --button-shadow-color-hover: rgba(10, 10, 10, 0.5);
@@ -291,9 +291,9 @@ textarea {
     --primary-foreground-color: #ccc;
     --secondary-foreground-color: #fff;
     --primary-subtle-color: #2c2fe6;
-    --secondary-subtle-color: #363b40;
+    --secondary-subtle-color: #1c262e;
     --titles-color: #aba69f;
-    --link-color: #96aed6;
+    --link-color: #6587af;
     --primary-border-color: #1d1d1d;
     --secondary-border-color: #0f0f0f;
     --article-shadow-normal: 0 4px 5px 5px rgba(0, 0, 0, 0.1);
@@ -2365,7 +2365,7 @@ _:-ms-fullscreen {
 @media only screen and (min-width: 48rem) {
   .m-footer__content {
     padding: 70px 0;
-    max-width: 370px;
+    max-width: 800px;
     margin: 0 auto;
   }
 }

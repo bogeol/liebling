@@ -221,11 +221,13 @@ into the {body} of the default.hbs template --}}
           <div class="m-author__content">
             <div class="m-author__picture">
               <a href="{{primary_author.url}}" class="m-author-picture" aria-label="{{primary_author.name}}">
-                {{#if primary_author.profile_image}}
+                {{!-- {{#if primary_author.profile_image}}
                   <div style="background-image: url({{primary_author.profile_image}});"></div>
                 {{else}}
                   <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
-                {{/if}}
+                {{/if}} --}}
+
+                <div style="background-image: url(https://cdn.bogeol.xyz/avator/bogeol.png);"></div>
               </a>
             </div>
             <div class="m-author__info">
