@@ -441,11 +441,11 @@
 }
 .l-post-content code {
   display: inline-block;
-  color: var(--link-color);
+  color: #59a6cb;
   font-size: 0.9rem;
   padding: 0 5px;
   border-radius: 5px;
-  background-color: var(--secondary-subtle-color);
+  background-color: #333131;
 }
 .l-post-content pre {
   line-height: 1.4;
